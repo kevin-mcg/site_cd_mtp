@@ -1,3 +1,3 @@
 # site_cd_mtp
 
-The code behing coderdojomontpellier.fr
+The code behind coderdojomontpellier.fr
