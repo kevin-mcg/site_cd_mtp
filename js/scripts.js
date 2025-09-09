@@ -60,7 +60,7 @@
     }
   });
 
-  /* When the user clicks on the button, 
+  /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -77,3 +77,16 @@
   }
 
 })(jQuery); // End of use strict
+
+// Fonction globale accessible depuis le HTML
+window.toggleDropdown = function () {
+  console.debug("test");
+  document.getElementById("myDropdown")?.classList.toggle("show");
+};
+
+// Clic à l’extérieur pour fermer
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn')) {
+    document.getElementById("myDropdown")?.classList.remove("show");
+  }
+};
