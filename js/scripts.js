@@ -63,13 +63,26 @@
 
 // Fonction globale accessible depuis le HTML
 window.toggleDropdown = function () {
-  console.debug("test");
-  document.getElementById("myDropdown")?.classList.toggle("show");
+  console.debug("test1");
+  document.getElementById("myDropdownNs")?.classList.toggle("show");
 };
 
 // Clic à l’extérieur pour fermer
 window.onclick = function (e) {
   if (!e.target.matches('.dropbtn')) {
-    document.getElementById("myDropdown")?.classList.remove("show");
+    document.getElementById("myDropdownNs")?.classList.remove("show");
+  }
+};
+
+// Fonction globale accessible depuis le HTML
+window.toggleDropdown = function () {
+  console.debug("test2");
+  document.getElementById("myDropdownVe")?.classList.toggle("show");
+};
+
+// Clic à l’extérieur pour fermer
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn')) {
+    document.getElementById("myDropdownVe")?.classList.remove("show");
   }
 };
