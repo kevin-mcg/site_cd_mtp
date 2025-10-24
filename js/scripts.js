@@ -62,20 +62,13 @@
 })(jQuery); // End of use strict
 
 // Fonction globale accessible depuis le HTML
-window.toggleDropdown = function () {
+window.toggleDropdownNs = function () {
   console.debug("test1");
   document.getElementById("myDropdownNs")?.classList.toggle("show");
 };
 
-// Clic à l’extérieur pour fermer
-window.onclick = function (e) {
-  if (!e.target.matches('.dropbtn')) {
-    document.getElementById("myDropdownNs")?.classList.remove("show");
-  }
-};
-
 // Fonction globale accessible depuis le HTML
-window.toggleDropdown = function () {
+window.toggleDropdownVe = function () {
   console.debug("test2");
   document.getElementById("myDropdownVe")?.classList.toggle("show");
 };
